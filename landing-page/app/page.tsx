@@ -1,5 +1,3 @@
-"use client";
-
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,12 +26,19 @@ export default function Home() {
             skills and aspirations.
           </p>
           <div className="w-full flex items-center justify-center md:justify-start gap-4">
-            <button className="w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-fuchsia-700 hover:text-white transition-colors">
-              Get Started
-            </button>
-            <button className="w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors">
-              Sign In
-            </button>
+            <Link
+              href="/sign-up"
+              className="w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-fuchsia-700 hover:text-white transition-colors"
+            >
+              <button className="w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-fuchsia-700 hover:text-white transition-colors">
+                Get Started
+              </button>
+            </Link>
+            <Link href="/sign-in">
+              <button className="w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors">
+                Sign In
+              </button>
+            </Link>
           </div>
         </div>
 
